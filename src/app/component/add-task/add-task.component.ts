@@ -22,9 +22,7 @@ export class AddTaskComponent implements OnInit {
      
   };
  
-text:string="aaaa";
-day:string ="aa";
-reminder:boolean=false
+
 
 
   constructor() { }

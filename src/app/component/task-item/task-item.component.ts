@@ -12,7 +12,6 @@ export class TaskItemComponent implements OnInit {
   faTrash=faTrash
   faPencilAlt=faPencilAlt
   faInfoCircle=faInfoCircle
-  faPenSquare=faSquareFull
   @Input() data!:Task
   @Output() onDeleteTask:EventEmitter<Task> =new EventEmitter()
   @Output() onToggleReminder:EventEmitter<UpdateTasksReminderPayload> =new EventEmitter()

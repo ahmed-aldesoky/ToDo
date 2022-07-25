@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { FooterComponent } from './component/footer/footer.component';
 import { HeaderComponent } from './component/header/header.component';
 import { TaskItemComponent } from './component/task-item/task-item.component';
 import { TasksComponent } from './component/tasks/tasks.component';
@@ -17,7 +16,6 @@ import {HttpClientModule} from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent,
     HeaderComponent,
     TaskItemComponent,
     TasksComponent,
