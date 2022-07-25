@@ -1,0 +1,35 @@
+<table class="  table m-2 p-2  justify-content-center align-items-center    d-flex ">
+    <tbody class="bg-white rounded-3 shadow-sm col-9  position-relative  ">
+       
+    <div class=" col-9 px-1 m-1 d- align-items-center ">
+        <td class="border-0">
+        <h3 type="text" class="  bg-transparent  px-3"  >{{data.text}}</h3>
+    </td>
+    <td class="border-0">
+        <label class="date-label me-2 text-black-50 position-absolute end-0 ">{{data.day}}</label>
+
+        
+           </td>
+    </div>
+
+<tr>
+      
+    <td class="border-0"><p class="  m-1 p-1"  (mouseup)="onToggle({data})"><i class="text-primary  btn m-1 p-0" data-toggle="tooltip" data-placement="bottom" title="reminding"><fa-icon *ngIf="data.reminder" [icon]="faCheckSquare"></fa-icon></i>
+
+        <i class="  text-primary btn m-1 p-0" data-toggle="tooltip" data-placement="bottom" title="reminding"><fa-icon *ngIf="!data.reminder" [icon]="faSquare"></fa-icon></i> 
+        reminder</p></td>
+        <td class="border-0">
+            <div class=" position-absolute end-0 me-1 ">
+                <div class="col-auto d-flex align-items-center pr-2">
+                    <div (mousedown)="onDelete(data)" class="end">
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                <td>
+                    
+                </td>
+                </div>
+            </div>
+        </td>
+    </tr>
+</tbody>
+</table>

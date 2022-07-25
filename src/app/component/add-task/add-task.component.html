@@ -1,0 +1,33 @@
+<div class="d-flex align-items-center justify-content-center m-2 p-2  ">
+    <div class="col-9">
+        <div class="row bg-white rounded-3 shadow-sm p-2  ">
+            <div class="">
+                <h3 class="text-center text-primary mb-4 mt-2 ">Add new task</h3>
+                <form #userForm="ngForm" ngNativeValidate (ngSubmit)="onSubmit()"  class="d-flex align-items-center justify-content-center row g-3">
+                    <div class="col-md-8">
+                      <input type="text" required name="task" #text="ngModel" [(ngModel)]="mydata.data.text" placeholder="Enter your task"   class="form-control-plaintext border border-primary rounded ps-1 " >
+                      <!-- <div *ngIf="text?.invalid" >
+                        <small class="text-danger" *ngIf="text?.errors?.['required']">Name is required.</small>
+                    </div> -->
+                    </div>
+                    <div class="col-md-8">
+                      <input type="datetime-local" required name="date" #date="ngModel" [(ngModel)]="mydata.data.day" placeholder="Enter task date"   class="form-control-plaintext border border-primary rounded  ps-1 ">
+                      <!-- <div *ngIf="date?.dirty " >
+                        <small class="text-danger" *ngIf="date?.errors?.['required']">Date is required.</small>
+                    </div> -->
+                    </div>
+                    <div class="form-check col-8 ms-3 ">
+                        <input class="form-check-input  " type="checkbox"   name="reminder" #reminder="ngModel" [(ngModel)]="mydata.data.reminder"   id="reminder">
+                        <label class="form-check-label" for="reminder">
+                         reminder
+                        </label>
+                      </div>
+                    <div class="row align-items-center justify-content-center">
+                      <button type="submit" class="btn w-25 btn-primary mb-3">Confirm</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="p-2 mx-4 border-black-25 border-bottom"></div>
